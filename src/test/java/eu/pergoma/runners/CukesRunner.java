@@ -15,9 +15,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "eu/pergoma/stepDefinitions",
         dryRun = false,
-        tags = "@test"
+        tags = "@login"
 )
-
-
 public class CukesRunner {
 }
