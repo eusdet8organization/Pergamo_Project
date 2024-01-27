@@ -1,8 +1,10 @@
 package eu.pergoma.stepDefinitions;
 
 import eu.pergoma.pages.AddressPage;
+import eu.pergoma.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.Alert;
 
 public class AddressPage_StepDefs {
 
@@ -47,5 +49,7 @@ public class AddressPage_StepDefs {
     @When("The user clicks on remove button")
     public void the_user_clicks_on_remove_button() {
         addressPage.clickRemoveButton();
+        Alert alert = Driver.get().switchTo().alert();
+        alert.accept();
     }
 }
