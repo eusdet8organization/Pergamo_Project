@@ -26,6 +26,7 @@ public class LoginPage extends BasePage{
         BrowserUtils.clearAndSendKeys(emailBox, email);
         BrowserUtils.clearAndSendKeys(passwordBox, password);
         loginButton.click();
+        BrowserUtils.waitFor(10);
     }
 
     public void verifyEmailWarning(String message) {
