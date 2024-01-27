@@ -15,7 +15,7 @@ public abstract class BasePage {
     protected WebElement loginButton;
 
     @FindBy (className = "header-mobile__item header-mobile__item--customer")
-    private WebElement accountLabel;
+    protected WebElement accountLabel;
 
     public abstract void verifyPageTitle();
 
