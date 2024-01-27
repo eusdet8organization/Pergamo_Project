@@ -17,15 +17,15 @@ public class AddressPage extends BasePage {
     @FindBy(xpath = " //button[text()='Update address']")
     private WebElement updateAddressButton;
 
-    @FindBy(id = "AddressAddress1_10018235842893")
+    @FindBy(id = "AddressAddress1New")
     private WebElement address1Box;
 
-    @FindBy(id = "AddressAddress2_10018235842893")
+    @FindBy(id = "AddressAddress2New")
     private WebElement address2Box;
-    @FindBy(id = "AddressCity_10018235842893")
+    @FindBy(id = "AddressCityNew")
     private WebElement cityBox;
 
-    @FindBy(id = "AddressZip_10018235842893")
+    @FindBy(id = "AddressZipNew")
     private WebElement postCodeBox;
 
     @FindBy(xpath = "//button[contains(text(),'new address')]")
@@ -78,8 +78,11 @@ public class AddressPage extends BasePage {
 
     @Override
     public void verifyPageTitle() {
-        Assert.assertEquals(Driver.get().getTitle(), "https://pergamo.eu/account/addresses");
+        Assert.assertEquals(Driver.get().getTitle(), "Adressen – pergamoeu");
     }
 
 
+    public void clickAddAddress() {
+        addAddressButton.click();
+    }
 }

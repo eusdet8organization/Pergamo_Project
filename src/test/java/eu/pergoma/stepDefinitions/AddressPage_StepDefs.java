@@ -43,7 +43,7 @@ public class AddressPage_StepDefs {
 
     @When("The user clicks on add Address button")
     public void the_user_clicks_on_add_address_button() {
-        addressPage.clickNewAddress();
+        addressPage.clickAddAddress();
     }
 
     @When("The user clicks on remove button")

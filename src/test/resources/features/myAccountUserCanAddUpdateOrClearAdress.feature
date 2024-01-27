@@ -5,11 +5,10 @@ Feature: My Account-User can Add, Update or Clear adress
   Background:
     Given The user navigates to Einloggen
     When The user logs in with credentials "testfirma@gmail.com" and "testFirma"
-    Then Verify that the user has logged in successfully
     When The user clicks on account button
     And The user clicks on "Addresses" button
     Then Verify that the user is on the Address page
-@wip
+
   Scenario Outline: TC_10_01_Update The Address
     When The user clicks on edit button
     And The user updates the fields "<Address 1>", "<Address 2>", "<City>",  "<Postal Code>"
@@ -28,6 +27,7 @@ Feature: My Account-User can Add, Update or Clear adress
     Examples:
       | firstname | lastname | company  | Address 1    | Address 2 | City  | Postal Code |
       | Obiwan    | Kenobi   | Starwars | Tantonie str | Galaxy    | Space | 5555        |
+
 
   Scenario: TC_10_03_Clear a Added Address
     When The user clicks on remove button
