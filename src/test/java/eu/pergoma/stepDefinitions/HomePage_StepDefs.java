@@ -1,6 +1,7 @@
 package eu.pergoma.stepDefinitions;
 
 import eu.pergoma.pages.HomePage;
+import eu.pergoma.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
