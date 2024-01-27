@@ -14,7 +14,7 @@ public abstract class BasePage {
     @FindBy(xpath = "//span[@class='customer-links']")
     protected WebElement loginButton;
 
-    @FindBy (className = "header-mobile__item header-mobile__item--customer")
+    @FindBy (xpath = "//a[@class='header__icon header__icon--account link link--text']")
     protected WebElement accountLabel;
 
     public abstract void verifyPageTitle();

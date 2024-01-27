@@ -12,8 +12,8 @@ Feature: User-Login Functionality Tests
   @negativeLogin
   Scenario: TC_0102-Negative Logins
     And The user logs in with credentials "" and "testFirma"
-    Then Verify warning Email "Please fill in this field." message
+    Then Verify warning Email "Fülle dieses Feld aus." message
     And The user logs in with credentials "testFirma@gmail.com" and ""
-    Then Verify warning Password "Please fill in this field." message
+    Then Verify warning Password "Fülle dieses Feld aus." message
     And The user logs in with credentials "testFirma@gmail.com" and "12345678"
     Then Verify warning Email or Password "Die E-Mail-Adresse oder das Passwort ist falsch." message
