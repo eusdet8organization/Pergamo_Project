@@ -11,13 +11,22 @@ public abstract class BasePage {
         PageFactory.initElements(Driver.get(), this);
     }
 
-    public abstract void verifyPageTitle();
-
     @FindBy(xpath = "//span[@class='customer-links']")
     protected WebElement loginButton;
 
+    @FindBy (className = "header-mobile__item header-mobile__item--customer")
+    private WebElement accountLabel;
+
+    public abstract void verifyPageTitle();
+
+
     public void navigateLogin() {
         loginButton.click();
+    }
+
+
+    public void clickAccount(){
+        accountLabel.click();
     }
 }
 
