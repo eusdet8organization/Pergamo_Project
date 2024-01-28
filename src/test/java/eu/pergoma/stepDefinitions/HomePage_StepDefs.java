@@ -18,4 +18,9 @@ public class HomePage_StepDefs {
     public void user_scrolls_to_and_click(String product) {
         homePage.clickProduct(product);
     }
+
+    @When("The user navigates to {string} menu")
+    public void the_user_navigates_to_menu(String menu) {
+        homePage.navigateMenu(menu);
+    }
 }
