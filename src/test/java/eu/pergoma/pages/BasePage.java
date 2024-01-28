@@ -1,6 +1,7 @@
 package eu.pergoma.pages;
 
 import eu.pergoma.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -27,6 +28,10 @@ public abstract class BasePage {
 
     public void clickAccount(){
         accountLabel.click();
+    }
+
+    public void navigateMenu(String menu) {
+        Driver.get().findElement(By.xpath("(//span[.='"+menu+"'])[1]")).click();
     }
 }
 
