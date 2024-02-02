@@ -1,4 +1,4 @@
-@regression @sortProducts
+@regression @sortProducts @jenkins
 Feature: Sort by shown Number per Page Tests
 
   Scenario: TC_0901-Product Sorting(Backen&Kochen)

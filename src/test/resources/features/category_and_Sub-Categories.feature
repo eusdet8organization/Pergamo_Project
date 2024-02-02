@@ -1,6 +1,6 @@
 @regression @category
 Feature: Category and Sub-Categories Tests
-
+  @jenkins
   Scenario: TC_0601-Navigate a Category Without Login
     When The user navigates to "Frühstück" menu
     Then The user should see the Fruhstuck page
@@ -8,7 +8,7 @@ Feature: Category and Sub-Categories Tests
     Then The user should see the BackenKochen page
     When The user navigates to "Nüsse & Kerne" menu
     Then The user should see the NusseKerne page
-
+  @jenkins
   Scenario: TC_0602-Navigate a Sub-Category Without Login
     When The user navigates to "Frühstück" menu
     And  The user clicks "Milchprodukte" subCategory

@@ -1,4 +1,4 @@
-@regression  @register @smoke
+@regression  @register @smoke @jenkins
   Feature: User-Register Functionality Tests
 
     Background:

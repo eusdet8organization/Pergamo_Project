@@ -1,4 +1,4 @@
-@regression  @searchIcon @smoke
+@regression  @searchIcon @smoke @jenkins
   Feature: Search Icon Function Tests
 
     Scenario: TC_0301-Positive Search Icon Function

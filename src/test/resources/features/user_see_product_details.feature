@@ -1,4 +1,4 @@
-@regression @product
+@regression @product @jenkins
 Feature: User See Product Details
 
   Scenario: TC_14-01_User See Product Details
